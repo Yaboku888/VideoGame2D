@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 21201980}
   - component: {fileID: 9553560}
   - component: {fileID: 2712898342562457649}
+  - component: {fileID: 5748723409216103788}
   - component: {fileID: 2012595308105836267}
   m_Layer: 0
   m_Name: spaceship_7
@@ -128,6 +129,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5748723409216103788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41445045a9e783c4585bd17a5cd55cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedmovement: 0
+  movimiento: {x: 0, y: 0}
 --- !u!61 &2012595308105836267
 BoxCollider2D:
   m_ObjectHideFlags: 0

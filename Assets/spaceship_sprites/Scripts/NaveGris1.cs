@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Nave1 : MonoBehaviour
+public class NaveGris1 : MonoBehaviour
 {
     public Movimiento Movement;
     public Transform Jugador;
@@ -32,8 +32,8 @@ public class Nave1 : MonoBehaviour
         }
         if (time >= 4)
         {
-            Movement.Move(-1, 0);
-            time = 0;
+            Movement.Move(-0, 0);
+            time = -2;
         }
 
     }

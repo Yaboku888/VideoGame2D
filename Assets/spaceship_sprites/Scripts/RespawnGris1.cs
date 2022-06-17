@@ -2,23 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Respawn : MonoBehaviour
+public class RespawnGris1 : MonoBehaviour
 {
     public float time = 0;
     public Transform canon;
-    public GameObject murcielago;
+    public GameObject naveGris1;
     private float movement;
- 
+
+    void Start()
+    {
+        
+    }
 
     void Update()
     {
         time = time + Time.deltaTime;
-        if (time >=2)
+        if (time >= 2)
         {
-            GameObject go = Instantiate(murcielago, canon.transform.position, canon.transform.rotation);
+            GameObject go = Instantiate(naveGris1, canon.transform.position, canon.transform.rotation);
             Destroy(go, 20f);
-            time = -7;
-        }   
-    
+            time = 0;
+        }
     }
 }
