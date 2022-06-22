@@ -28,7 +28,7 @@ public class NaveRoja1 : MonoBehaviour
         }
         if (time >= 3)
         {
-            Movement.Move(-0, -1);
+            Movement.Move(1, 1);
         }
         if (time >= 4)
         {
