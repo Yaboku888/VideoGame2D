@@ -6,7 +6,7 @@ public class RandomRojo : MonoBehaviour
 {
 
     public float time = 0;
-    public GameObject naveRoja1;
+    public GameObject naveRoja;
     private float movement;
     Vector3 position;
     float numero;
@@ -19,7 +19,7 @@ public class RandomRojo : MonoBehaviour
         {
             position = transform.position;
             position.x = numero;
-            GameObject go = Instantiate(naveRoja1, position, transform.rotation);
+            GameObject go = Instantiate(naveRoja, position, transform.rotation);
             Destroy(go, 20f);
             time = 0    ;
         }
