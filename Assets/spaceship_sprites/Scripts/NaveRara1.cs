@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NaveGris1 : MonoBehaviour
+public class NaveRara1 : MonoBehaviour
 {
     public Movimiento Movement;
     public Transform Jugador;
     public float rango = 60;
     private float distance;
     public float time = 0;
-    // Start is called before the first frame update
     void Start()
     {
         
@@ -32,8 +31,8 @@ public class NaveGris1 : MonoBehaviour
         }
         if (time >= 4)
         {
-            Movement.Move(1, 0);
-            time = -2;
+            Movement.Move(1, -0);
+            time = 0;
         }
 
     }

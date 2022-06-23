@@ -24,16 +24,16 @@ public class NaveRoja1 : MonoBehaviour
         time = time + Time.deltaTime;
         if (time >= 2)
         {
-            Movement.Move(-1, -1);
+            Movement.Move(-1, 0);
         }
         if (time >= 3)
         {
-            Movement.Move(1, 1);
+            Movement.Move(-1, 0);
         }
         if (time >= 4)
         {
             Movement.Move(-1, 0);
-            time = 0;
+            time = 1;
         }
     }
 }
