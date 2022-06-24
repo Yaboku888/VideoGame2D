@@ -20,8 +20,8 @@ public class RandomRojo : MonoBehaviour
             position = transform.position;
             position.x = numero;
             GameObject go = Instantiate(naveRoja, position, transform.rotation);
-            Destroy(go, 20f);
-            time = 0    ;
+            Destroy(go, 5f);
+            time = 0;
         }
 
     }

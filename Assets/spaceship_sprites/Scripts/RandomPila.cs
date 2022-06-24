@@ -24,9 +24,11 @@ public class RandomPila : MonoBehaviour
             position = transform.position;
             position.x = numero;
             GameObject go = Instantiate(navePila, position, transform.rotation);
-            Destroy(go, 20f);
+            Destroy(go, 10f);
             time = 1;
         }
 
     }
+
+    
 }
