@@ -12,7 +12,7 @@ public class RandomRaro : MonoBehaviour
 
     void Update()
     {
-        numero = Random.Range(-14f, 13f);
+        numero = Random.Range(-12f, 12f);
         time = time + Time.deltaTime;
         if (time >= 2)
         {
