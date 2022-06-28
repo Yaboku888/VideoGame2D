@@ -27,7 +27,7 @@ public class Movimiento : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        gameObject.SetActive(false);
+        speedmovement = 0;
     }
 
 }
