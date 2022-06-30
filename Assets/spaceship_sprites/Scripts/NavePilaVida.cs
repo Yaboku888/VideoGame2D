@@ -8,11 +8,12 @@ public class NavePilaVida : MonoBehaviour
     public Vector2 movimiento;
     public float vidamax = 2;
     public float vidaActual;
-
+    public GameObject nave;
+    public GameObject explotion;
     void Start()
     {
         vidaActual = vidamax;
-
+        explotion.SetActive(false);
     }
 
     // Update is called once per frame
@@ -30,11 +31,17 @@ public class NavePilaVida : MonoBehaviour
     }
     private void OnMouseDown()
     {
+       
         float daño = 1;
         vidaActual = vidaActual - daño;
+       
+       
         if (vidaActual == 0)
-        {
-            gameObject.SetActive(false);
+        { 
+            speedmovement = 0;
+            nave.GetComponent<SpriteRenderer>().enabled = false;
+            explotion.SetActive(true);
+            Destroy(explotion, 1f);
         }
         
     }

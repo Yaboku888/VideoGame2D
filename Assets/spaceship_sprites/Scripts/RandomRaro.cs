@@ -19,8 +19,9 @@ public class RandomRaro : MonoBehaviour
             position = transform.position;
             position.x = numero;
             GameObject go = Instantiate(naveRara, position, transform.rotation);
-            Destroy(go, 20f);
+            Destroy(go, 5f);
             time = 0;
         }
+
     }
 }
