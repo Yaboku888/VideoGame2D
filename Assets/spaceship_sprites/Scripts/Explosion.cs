@@ -20,7 +20,7 @@ public class Explosion : MonoBehaviour
     {
         nave.GetComponent<SpriteRenderer>().enabled = false;
         explotion.SetActive(true);
-        Destroy(explotion, 1f);
+        Destroy(explotion, 3f);
     }
 
 

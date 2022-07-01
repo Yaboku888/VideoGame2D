@@ -20,7 +20,7 @@ public class RandomGris : MonoBehaviour
             position = transform.position;
             position.x = numero;
             GameObject go = Instantiate(naveGris1, position, transform.rotation);
-            Destroy(go, 20f);
+            Destroy(go, 10f);
             time = 0;
         }
 

@@ -9,13 +9,13 @@ public class Movimiento : MonoBehaviour
 
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Move(-1f,0);
     }
     public void Move (float vertical, float Horizontal)
     {
@@ -27,6 +27,8 @@ public class Movimiento : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        Destroy(gameObject, 0.5f);
+
         speedmovement = 0;
     }
 

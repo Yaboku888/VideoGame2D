@@ -11,9 +11,13 @@ GameObject:
   - component: {fileID: 420902}
   - component: {fileID: 21296622}
   - component: {fileID: 9509168}
+  - component: {fileID: -4778806960476331661}
+  - component: {fileID: 4536796288148700423}
+  - component: {fileID: 5592896447257229837}
+  - component: {fileID: -5083069603166564819}
   m_Layer: 0
   m_Name: spaceship_2
-  m_TagString: Untagged
+  m_TagString: enemigos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,8 +30,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147846}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -105,3 +109,60 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-4778806960476331661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41445045a9e783c4585bd17a5cd55cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedmovement: 10
+  movimiento: {x: 0, y: 0}
+--- !u!65 &4536796288148700423
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147846}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4, y: 0.4, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5592896447257229837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a4056b5fd61d7142829c97d416c223e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Movement: {fileID: -4778806960476331661}
+  Jugador: {fileID: 1443735564188678422, guid: fb27501b9b8db20488a6ff908732698f, type: 3}
+  rango: 60
+  time: 0
+--- !u!114 &-5083069603166564819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44f110b0b3d88a449980013c57d32547, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nave: {fileID: 147846}
+  explotion: {fileID: 7161759183032265873, guid: 52f15bb7c149afd47ab2113fcb80955a, type: 3}
