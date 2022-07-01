@@ -34,7 +34,7 @@ public class GameOver : MonoBehaviour
         
     }
 
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter(Collider other)
     {
 
         
@@ -60,9 +60,8 @@ public class GameOver : MonoBehaviour
             vida4.gameObject.SetActive(false);
             SceneManager.LoadScene("perdio");
         }
-
-
-
+        
+              
     }
     
 
