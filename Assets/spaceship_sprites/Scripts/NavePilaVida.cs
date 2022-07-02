@@ -19,7 +19,7 @@ public class NavePilaVida : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Move(-1f, 0);
     }
     public void Move(float vertical, float Horizontal)
     {
@@ -31,7 +31,7 @@ public class NavePilaVida : MonoBehaviour
     }
     private void OnMouseDown()
     {
-       
+        
         float daño = 1;
         vidaActual = vidaActual - daño;
        
@@ -41,7 +41,9 @@ public class NavePilaVida : MonoBehaviour
             speedmovement = 0;
             nave.GetComponent<SpriteRenderer>().enabled = false;
             explotion.SetActive(true);
-            Destroy(explotion, 1f);
+           Destroy(gameObject, 0f); 
+            Destroy(explotion, 0f);
+            
         }
         
     }

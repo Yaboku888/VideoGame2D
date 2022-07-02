@@ -27,7 +27,7 @@ public class Movimiento : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        Destroy(gameObject, 0.5f);
+        Destroy(gameObject, 0f);
 
         speedmovement = 0;
     }
